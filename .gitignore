@@ -5,5 +5,4 @@ dist
 .eslint*
 jsconfig.json
 typings.json
-project.todo
 npm-debug.log
