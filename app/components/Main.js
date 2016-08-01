@@ -10,11 +10,11 @@ import GetWeatherContainer from '../containers/GetWeatherContainer';
 class Main extends Component {
   render() {
     return (
-      <div className='main-container' style={backgroundColor}>
+      <div className='main-container no-gutter' style={backgroundColor}>
         <header>
           <h1>React Weather</h1>
         </header>
-        <div className='container'>
+        <div className='container no-gutter'>
           {this.props.children}
         </div>
       </div>

@@ -2,7 +2,9 @@ var styles = {
   backgroundImg: {
     backgroundImage: 'url("../app/images/pattern.svg")',
     backgroundColor: '#ffa31a',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    height: '100%',
+    boxSizing: 'border-box'
   },
   space: {
     marginTop: '25px'

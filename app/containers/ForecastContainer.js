@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import Forecast from '../components/Forecast';
 import weather from '../utils/weather';
+import {backgroundImg} from '../styles';
 
 class ForecastContainer extends Component {
   constructor(props) {
@@ -52,7 +53,7 @@ class ForecastContainer extends Component {
     /**
      * @todo Tie this to the Forecast component
      */
-    return ( <div>
+    return ( <div style={backgroundImg}>
       <Forecast 
         forecast={this.state.forecast}
       />
