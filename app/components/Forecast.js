@@ -12,7 +12,7 @@ class Forecast extends Component {
           function(day) {
             console.log('Day:', day);
             return (
-              <div key={day.dt}>
+              <div className='col-lg-12 text-center' key={day.dt}>
                 {day.weather[0].description}
               </div>
             );

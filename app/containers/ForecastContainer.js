@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import Forecast from '../components/Forecast';
 import weather from '../utils/weather';
 import {backgroundImg} from '../styles';
@@ -25,29 +25,29 @@ class ForecastContainer extends Component {
     
   }
 
-  componentDidMount() {
+  // componentDidMount() {
     
-  }
+  // }
 
-  componentWillReceiveProps(nextProps) {
+  // componentWillReceiveProps(nextProps) {
 
-  }
+  // }
 
   // shouldComponentUpdate(nextProps, nextState) {
 
   // }
 
-  componentWillUpdate(nextProps, nextState) {
+  // componentWillUpdate(nextProps, nextState) {
 
-  }
+  // }
 
-  componentDidUpdate(prevProps, prevState) {
+  // componentDidUpdate(prevProps, prevState) {
 
-  }
+  // }
 
-  componentWillUnmount() {
+  // componentWillUnmount() {
 
-  }
+  // }
 
   render() {
     /**

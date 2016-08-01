@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import GetWeather from '../components/GetWeather';
-import weather from '../utils/weather';
+// import weather from '../utils/weather';
 
 class GetWeatherContainer extends Component {
   constructor(props){

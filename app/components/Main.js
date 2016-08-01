@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import Home from './Home';
 import {backgroundColor} from '../styles';
-import GetWeatherContainer from '../containers/GetWeatherContainer';
 
 
 /**
@@ -10,11 +8,11 @@ import GetWeatherContainer from '../containers/GetWeatherContainer';
 class Main extends Component {
   render() {
     return (
-      <div className='main-container no-gutter' style={backgroundColor}>
+      <div className='main-container' style={backgroundColor}>
         <header>
           <h1>React Weather</h1>
         </header>
-        <div className='container no-gutter'>
+        <div className='container'>
           {this.props.children}
         </div>
       </div>
