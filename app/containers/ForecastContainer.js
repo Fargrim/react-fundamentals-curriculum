@@ -6,21 +6,26 @@ class ForecastContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: '',
-      weather: []
+      forecast: []
     }
   }
 
-  componentWillMount() {
-    const test = weather.getFiveDayForecast(this.props.params.city).then(function(weatherList) {
+  requestForecast(city) {
+    weather.getFiveDayForecast(city).then(function(weatherList) {
+      console.log(weatherList);
       this.setState({
-        weather: weatherList
+        forecast: weatherList
       });
     }.bind(this));
   }
 
+  componentWillMount() {
+    this.requestForecast(this.props.params.city);
+    
+  }
+
   componentDidMount() {
-    console.log('DID MOUNT');
+    
   }
 
   componentWillReceiveProps(nextProps) {
@@ -47,14 +52,11 @@ class ForecastContainer extends Component {
     /**
      * @todo Tie this to the Forecast component
      */
-    // <div>
-    //   <Forecast 
-    //     city={this.state.city}
-    //     weather={this.state.weather}
-    //     date={this.state.weather}
-    //   />
-    // </div> );
-    return ( <div>YO DAWG!</div> );
+    return ( <div>
+      <Forecast 
+        forecast={this.state.forecast}
+      />
+    </div> );
   }
 }
 
